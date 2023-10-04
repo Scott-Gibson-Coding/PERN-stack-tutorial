@@ -1,5 +1,5 @@
 # node.js
 node_modules
 
-# ignore this file it uses ENV_VARs instead of actual password
-DB.js
+# ignore this file until it uses ENV_VARs instead of actual password
+# DB.js
