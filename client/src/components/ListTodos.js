@@ -12,7 +12,7 @@ const ListTodos = () => {
         method: "DELETE",
       });
 
-      setTodos(todos.filter((todo) => todo.todo_id !== id));
+      // setTodos(todos.filter((todo) => todo.todo_id !== id));
     } catch (err) {
       console.log(err.message);
     }
@@ -21,9 +21,10 @@ const ListTodos = () => {
   const getTodos = async () => {
     try {
       const response = await fetch("http://localhost:5000/todos");
-      const jsonData = await response.json();
+      const data = await response.json();
 
-      setTodos(jsonData);
+      // setTodos(jsonData);
+      console.log(data);
     } catch (err) {
       console.error(err.message);
     }
